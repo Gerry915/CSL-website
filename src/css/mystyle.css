@@ -1,1 +1,39 @@
-/* No CSS *//*# sourceMappingURL=mystyle.css.map */
+.main-img {
+  background-color: black;
+  height: 1333px;
+  width: auto;
+  background-image: url("../img/main-background.jpg");
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: cover;
+  opacity: 0;
+}
+
+.blur-img {
+  background-color: black;
+  height: 1333px;
+  width: auto;
+  background-image: url("../img/main-background-blur.jpg");
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: cover;
+  position: absolute;
+}
+
+.hide {
+  transition: opacity 2s;
+  opacity: 0;
+  display: none;
+}
+
+.show {
+  transition: opacity 2s;
+  opacity: 0.9;
+}
+
+.d-style {
+  display: block;
+}
+/*# sourceMappingURL=mystyle.css.map */

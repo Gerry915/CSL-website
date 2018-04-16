@@ -20,8 +20,21 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
+<body onscroll="myFun()">
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Get a qoute!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <a href="#" class="navbar-brand">
             <img src="./src/img/CSLTAS-LOGO.png" alt="csltas" style="height:50px;width:auto">
         </a>
@@ -41,38 +54,30 @@
                     <a class="nav-link" href="#">About Us</a>
                 </li>
             </ul>
+        </div>
     </nav>
 
+    <section id="title-section">
+        <div class="main">
+                <figure class="main-img"></figure>
+                <figure class="blur-img"></figure>
+        </div>
+        
 
-    <section id="icons-grid">
-        <div class="container bg-warning">
-            <div class="row">
-                <div class="col-lg-4 text-center">
-                        <i class="fas fa-th-large"></i>
-                </div>
-                <div class="col-lg-4 text-center">
-                        <i class="fas fa-pen-square"></i>
-                </div>
-                <div class="col-lg-4 text-center">
-                        <i class="fas fa-users"></i>
-                </div>
-            </div>
-            <div class="row">
-                    <div class="col-lg-4 text-center">
-                            <i class="fas fa-video"></i>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                            <i class="fas fa-pen-square"></i>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                            <i class="fas fa-users"></i>
-                    </div>
-                </div>
+    </section>
+
+    <section id="text-section">
+        <div class="second-block">
+            <h1 class="display text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor alias earum, error ipsam quidem.</h1>
         </div>
     </section>
 
+
+
     <div style="height:2000px"></div>
     <!-- Optional JavaScript -->
+
+    <script src="./src//js/app.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
