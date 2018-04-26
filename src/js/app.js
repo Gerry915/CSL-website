@@ -54,9 +54,7 @@ function myFun(){
 }
 
 
-
-
-function showSection(buttion_id){
+/*function showSection(buttion_id){
     var warehouse = document.getElementById("warehouse-list")
     var distribution = document.getElementById("distribution-list")
     var fleet = document.getElementById("fleet-list")
@@ -83,4 +81,56 @@ function showSection(buttion_id){
         fleet.style.display = "block"
 
     }
+}*/
+
+function showSection(buttion_id){
+    var distribution = document.getElementById("distribution-list")
+    var fleet = document.getElementById("fleet-list")
+    var btn =document.getElementById("distribution")
+    var btnTwo = document.getElementById("fleet")
+
+    if(buttion_id ==="distribution"){
+        console.log(distribution)
+        console.log(btn)
+        btn.classList.add("bg-dark")
+        btn.classList.add("text-light")
+        btnTwo.classList.remove("bg-dark")
+        btnTwo.classList.remove("text-light")
+        distribution.style.display = "block"
+        fleet.style.display = "none"
+
+    }else if(buttion_id ==="fleet"){
+        console.log(fleet)
+        btnTwo.classList.add("bg-dark")
+        btnTwo.classList.add("text-light")
+        btn.classList.remove("bg-dark")
+        btn.classList.remove("text-light")
+        fleet.style.display = "block"
+        distribution.style.display = "none"
+        
+
+    }
 }
+
+
+
+$(function() {
+    // This will select everything with the class smoothScroll
+    // This should prevent problems with carousel, scrollspy, etc...
+    $('.smoothScroll').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000); // The number here represents the speed of the scroll in milliseconds
+          return false;
+        }
+      }
+    });
+  });
+  
+  // Change the speed to whatever you want
+  // Personally i think 1000 is too much
+  // Try 800 or below, it seems not too much but it will make a difference

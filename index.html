@@ -24,7 +24,7 @@
 </head>
 
 <body id="main" onscroll="myFun()">
-    <nav id="nav" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <nav id="nav" class="navbar navbar-expand-md navbar-light fixed-top">
         <a href="#" class="navbar-brand">
             <img src="./src/img/CSLTAS-LOGO.png" alt="csltas" style="height:50px;width:auto">
         </a>
@@ -35,16 +35,16 @@
         <div class="collapse navbar-collapse" id="cslnav">
             <ul class="test navbar-nav ml-auto pr-3">
                 <li class="nav-item active mr-3">
-                    <a id="nav-text1" class="nav-link text-muted" href="#">Home</a>
+                    <a id="nav-text1" class="nav-link text-muted smoothScroll" href="#main">Home</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a id="nav-text2" class="nav-link text-muted" href="#services">Services</a>
+                    <a id="nav-text2" class="nav-link text-muted smoothScroll" href="#services">Services</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a id="nav-text3" class="nav-link text-muted" href="#fleet-management">Location</a>
+                    <a id="nav-text3" class="nav-link text-muted smoothScroll" href="#where">Location</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a id="nav-text4" class="nav-link text-muted" href="#contact-us">Contact Us</a>
+                    <a id="nav-text4" class="nav-link text-muted smoothScroll" href="#contact-us">Contact Us</a>
                 </li>
                 <li class="nav-item">
                         <button id="qoute" type="button" class="btn-success nav-link text-light">Get a qoute</button>
@@ -73,53 +73,11 @@
         </div>
     </section>
 
-<!--Services section with button group-->
-<!--
-    <section id="services" class="mb-5 py-5">
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-lg-5">
-                    <h1 class="display-3">Our Services</h1>
-                    <p>CSL provides a complete Logistics partner in Tasmania Tailoring to your Fleet, Freight and Warehousing needs.</p>
-                    </div>
-                <div class="col-lg-7">
-                        <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
-                                <button id="warehouse" type="button" class="long-btn btn btn-outline-dark" onclick="showSection(this.id)">Warehousing</button>
-                                <button id="distribution" type="button" class="long-btn btn btn-outline-dark" onclick="showSection(this.id)">Distribution</button>
-                                <button id="fleet" type="button" class="long-btn btn btn-outline-dark" onclick="showSection(this.id)">Fleet Management</button>
-                              </div>
-                    <div id="warehouse-list">
-                        <ul class="mt-5 text-left services-list">
-                            <li><span class="mr-5"><i class="far fa-check-square"></i></span>Over 2000 sq meters of secure undercover storage</li>
-                            <li><span class="mr-5"><i class="far fa-check-square"></i></span>State of the art WMS for traceability and accountability</li>
-                            <li><span class="mr-5"><i class="far fa-check-square"></i></span>Locations State-wide</li>
-                            <li><span class="mr-5"><i class="far fa-check-square"></i></span>Trained and qualified staff</li>
-                        </ul>
-                    </div>
-                    <div id="distribution-list" class="hide-section">
-                        <ul class="mt-5 text-left services-list">
-                            <li><span class="mr-5"><i class="far fa-check-square"></i></span>Partnerships with carriers State-wide, Nationwide and Worldwide</li>
-                         </ul>
-                    </div>
-                    <div id="fleet-list" class="hide-section">
-                        <ul class="mt-5 text-left services-list">
-                            <li><span class="mr-5"><i class="far fa-check-square"></i></span>Modern Fleet</li>
-                            <li><span class="mr-5"><i class="far fa-check-square"></i></span>GPS Tracking</li>
-                            <li><span class="mr-5"><i class="far fa-check-square"></i></span>OHS aware</li>
-                        </ul>
-                     </div>                       
-                    
-                </div>
-            </div>
-        </div>
-    </section>
--->
-    
     <section id="services" class="w-100">
         <div class="container mx-auto">
             <div class="row">
-                <div class="col-4">
-                        <div class="card service-card">
+                <div class="col-lg-4">
+                        <div class="card service-card m-auto">
                                 <img class="card-img-top service-img" src="./src/img/warehousing.jpg" alt="sample">
                                 <div class="card-body bg-dark text-light">
                                     <h5 class="card-title lead">Warehouse</h5>
@@ -130,26 +88,26 @@
                                 </div>
                             </div>
                 </div>
-                <div class="col-4">
-                        <div class="card service-card">
+                <div class="col-lg-4">
+                        <div class="card service-card m-auto">
                                 <img class="card-img-top service-img" src="./src/img/distribution.jpg" alt="sample">
                                 <div class="card-body bg-dark text-light">
                                     <h5 class="card-title lead">Distribution</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae inventore minima, 
                                         rem assumenda eligendi obcaecati enim in ab aut suscipit dignissimos autem perspiciatis qui eos.</p>
-                                    <a href="#fleet-management" class="btn btn-info my-3">Read more</a>
+                                    <a href="#distribution-fleet" class="btn btn-info my-3">Read more</a>
                                 </div>
                             </div>
                 </div>
-                <div class="col-4">
-                        <div class="card service-card">
+                <div class="col-lg-4">
+                        <div class="card service-card m-auto">
                                 <img class="card-img-top service-img" src="./src/img/fleet-management.jpg" alt="sample">
                                 <div class="card-body bg-dark text-light">
                                     <h5 class="card-title lead">Fleet Management</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ullam exercitationem, 
                                         laboriosam dignissimos assumenda ipsa minus et optio. Sed voluptates
                                          harum rem nobis ad obcaecati.</p>
-                                    <a href="#fleet-management" class="btn btn-info my-3">Read more</a>
+                                    <a href="#distribution-fleet" class="btn btn-info my-3">Read more</a>
                                 </div>
                             </div>
                 </div>
@@ -159,7 +117,8 @@
 
     <section id="warehouse" class="mb-5">
         <div class="container">
-            <h4 class="display-4 pb-3 mb-3">Warehousing</h4>
+            <h1 class="display-5 pb-3 mb-3 main-title-heading">Warehouse</h1>
+            <hr>
             <div class="row">
                 <div class="col-lg-8">
                     <h3>Features</h3>
@@ -195,19 +154,19 @@
     <section id="grid-features" class="my-5">
         <div class="container">
             <div id="first-row" class="row">
-                <div class="col-md-4 text-center p-5">
+                <div class="feature col-md-4 text-center p-5">
                     <i class="fas fa-desktop feature-icon" style="height:70px; width: auto; color:darkslategrey"></i>
                     <p class="lead">Integrated Software</p>
                     <p class="text-muted">Customized Warehouse Management System</p>
                 </div>
-                <div class="col-md-4 text-center p-5">
+                <div class="feature col-md-4 text-center p-5">
                         <i class="fas fa-paperclip feature-icon" style="height:70px; width: auto; color:darkslategrey"></i>
                         <p class="lead">Flexible Contracts</p>
                         <p class="text-muted">
                                 CSL offers customised contractual options making it practical and 
                                 affordable for a business of any size to house items in our warehouse</p>
                 </div>
-                <div class="col-md-4 text-center p-5">
+                <div class="feature col-md-4 text-center p-5">
                         <i class="far fa-handshake feature-icon" style="height:70px; width: auto; color:darkslategrey"></i>
                         <p class="lead">Partnerships</p>
                         <p class="text-muted">With the high freight movement and our strategic partners, CSL 
@@ -215,21 +174,21 @@
                 </div>
             </div>
             <div id="first-row" class="row">
-                    <div class="col-md-4 text-center p-5">
+                    <div class="feature col-md-4 text-center p-5">
                         <i class="fas fa-lock feature-icon" style="height:70px; width: auto; color:darkslategrey"></i>
                         <p class="lead">Extensive Security Monitoring</p>
                         <p class="text-muted">
                             With nothing less than 17 Cameras and state of the art alarm systems, customers can rest assured their 
                             product is safe. All stock is kept safe in our fully alarmed warehouse with back to base monitoring.</p>    
                     </div>
-                    <div class="col-md-4 text-center p-5">
+                    <div class="feature col-md-4 text-center p-5">
                         <i class="fas fa-users feature-icon" style="height:70px; width: auto; color:darkslategrey"></i>
                         <p class="lead">Professional Staff</p>
                         <p class="text-muted">
                             CSL company culture prides itself on accuracy, efficiency and customer service. Our fully trained team are professional 
                             and friendly, and look forward to working with you and the needs of your business.</p>    
                     </div>
-                    <div class="col-md-4 text-center p-5">
+                    <div class="feature col-md-4 text-center p-5">
                         <i class="far fa-compass feature-icon" style="height:70px; width: auto; color:darkslategrey"></i>
                         <p class="lead">Locations</p>
                         <p class="text-muted">
@@ -242,9 +201,35 @@
     </section>
 
 
+<!--Services section with button group-->
 
+    <section id="distribution-fleet" class="my-5">
+        <div class="container mt-5">
+            
+                <h1 class="display-5 text-center p-3 main-title-heading">Distribution & Fleet Management</h1>
+                <hr>
+                <p class="text-muted text-center p-3">CSL provides a complete Logistics partner in Tasmania Tailoring to your Fleet, Freight and Warehousing needs.</p>
+                <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
+                        <button id="distribution" type="button" class="long-btn btn btn-outline-dark" onclick="showSection(this.id)">Distribution</button>
+                        <button id="fleet" type="button" class="long-btn btn btn-outline-dark" onclick="showSection(this.id)">Fleet Management</button>
+                      </div>
 
-    <section id="fleet-management" class="mb-5">
+            <div id="distribution-list" class="hide-section" style="display: block">
+                <ul class="mt-5 text-left services-list">
+                    <li><span class="mr-5"><i class="far fa-check-square"></i></span>Partnerships with carriers State-wide, Nationwide and Worldwide</li>
+                 </ul>
+            </div>
+            <div id="fleet-list" class="hide-section">
+                <ul class="mt-5 text-left services-list">
+                    <li><span class="mr-5"><i class="far fa-check-square"></i></span>Modern Fleet</li>
+                    <li><span class="mr-5"><i class="far fa-check-square"></i></span>GPS Tracking</li>
+                    <li><span class="mr-5"><i class="far fa-check-square"></i></span>OHS aware</li>
+                </ul>
+             </div> 
+        </div>
+    </section>
+
+<!--<section id="fleet-management" class="mb-5">
         
         <div class="container">
             <div class="card-group">
@@ -268,11 +253,16 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
+    
+    
 
-    <section id="" class="">
+    <section id="goo-map" class="">
         <div id="google-map" class="container">
-            <h2>Our Location</h2>
+            <h1 id="where" class="text-center display-5 mb-3 main-title-heading">OUR LOCATION</h1>
+            <p class="text-muted text-center">Complete Storage and Logistics is located in a secure environment which is monitored 24/7 for client satisfaction. 
+                    For more information please give us a call or contact via email</p>
+            <hr class="mb-5">
         </div>
         <div id="map"></div>
     </section>
@@ -286,7 +276,7 @@
                     </div>
                     <div class="col-lg-7">
 
-                            <h2>About Us</h2>
+                            <h1 class="display-5 main-title-heading my-3">ABOUT US</h1>
                             <p>Complete Storage & Logistics is a 100% Tasmania owned and operated company. Beginning as a small freight company with just two
                                 vans, over the years we have not only grown considerably across the state, but diversified our service. Growing all aspect of the business from the ground up has given
                                 us the direction and knowledge of all aspect of the business.
@@ -334,7 +324,7 @@
 
     <br>
     <div id="end" class="container mt-2">
-        <footer class="text-muted" style="font-size: 10px">Visit our sister business at <a href="">Empire Couriers</a> and <a href="https://www.budgetbox.com.au/">Budget Box Mobile Storage</a></footer>
+        <footer class="text-muted" style="font-size: 10px">Visit our sister business at <a href="https://www.empirecouriers.com.au/page/homepage">Empire Couriers</a> and <a href="https://www.budgetbox.com.au/">Budget Box Mobile Storage</a></footer>
         <hr>
         <footer class="text-muted mb-3" style="font-size: 10px">Copyright &copy; 2018 CSL TAS All rights reserved.</footer>
     </div>
@@ -355,7 +345,7 @@
             })
 
             var infowindow = new google.maps.InfoWindow({
-                content: '<h3>CSL TAS</h3><p>37 Howard Rd, Glenorchy, TAS 7010</p>'
+                content: '<p class="lead">Complete Storage and Logistics</p><p>37 Howard Rd, Glenorchy, TAS 7010</p>'
             })
 
             marker.addListener('mouseover',function(){
@@ -371,7 +361,7 @@
 
     <!-- Optional JavaScript -->
 
-    <script src="./src//js/app.js"></script>
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -379,6 +369,34 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./src//js/app.js"></script>
+
+    <script>
+        window.sr = ScrollReveal();
+
+        sr.reveal('#title',{
+            duration:1000,
+            origin: 'left',
+            distance: '200px',
+            viewFactor: 0.5
+        });
+
+        sr.reveal('.feature',{
+            duration:1000,
+            origin: 'bottom',
+            distance: '100px',
+            viewFactor: 0.5
+        });
+
+        sr.reveal('.service-card',{
+            duration: 1000,
+            origin: 'bottom',
+            distance: '300px',
+            viewFactor: 0.5
+        })
+    </script>
 </body>
 
 </html>

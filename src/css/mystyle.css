@@ -85,8 +85,8 @@
 }
 
 #services {
-  position: absolute;
-  top: 1133px;
+  position: relative;
+  top: 850px;
   z-index: 3;
 }
 
@@ -104,7 +104,13 @@
 
 #fleet-management {
   position: relative;
-  top: 1600px;
+  top: 1000px;
+}
+
+#distribution-fleet {
+  position: relative;
+  top: 1000px;
+  height: 500px;
 }
 
 .round-img {
@@ -113,17 +119,17 @@
 
 #contact-us {
   position: relative;
-  top: 1600px;
+  top: 1000px;
 }
 
 #foot {
   position: relative;
-  top: 1600px;
+  top: 1000px;
 }
 
 #end {
   position: relative;
-  top: 1600px;
+  top: 1000px;
 }
 
 #title {
@@ -137,12 +143,10 @@
   z-index: 100;
   color: white;
   width: 100%;
-  padding-right: 200px;
-  background-color: blue;
 }
 
 #subtitle {
-  top: 800px;
+  top: 700px;
   position: relative;
   z-index: 100;
   color: white;
@@ -158,13 +162,13 @@
 
 #warehouse {
   position: relative;
-  top: 1600px;
+  top: 1000px;
 }
 
 #showcase {
   height: 400px;
   position: relative;
-  top: 1600px;
+  top: 1000px;
   background-image: url("../img/IMG_2116-blur.JPG");
   background-attachment: fixed;
   background-size: cover;
@@ -176,7 +180,7 @@
 
 #grid-features {
   position: relative;
-  top: 1600px;
+  top: 1000px;
 }
 
 .feature-icon {
@@ -185,12 +189,12 @@
 
 #google-map {
   position: relative;
-  top: 1600px;
+  top: 1000px;
 }
 
 #map {
   position: relative;
-  top: 1600px;
+  top: 1000px;
   height: 400px;
   width: 100%;
 }
