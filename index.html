@@ -118,7 +118,7 @@
             <div class="row">
                 <div class="col-4">
                         <div class="card service-card">
-                                <img class="card-img-top service-img" src="./src/img/sample.jpg" alt="sample">
+                                <img class="card-img-top service-img" src="./src/img/warehousing.jpg" alt="sample">
                                 <div class="card-body bg-dark text-light">
                                     <h5 class="card-title lead">Warehouse</h5>
                                     <p class="card-text">Lorem, ipsum dolor Lorem ipsum dolor sit amet, consectetur 
@@ -130,7 +130,7 @@
                 </div>
                 <div class="col-4">
                         <div class="card service-card">
-                                <img class="card-img-top service-img" src="./src/img/sample-01.jpeg" alt="sample">
+                                <img class="card-img-top service-img" src="./src/img/distribution.jpg" alt="sample">
                                 <div class="card-body bg-dark text-light">
                                     <h5 class="card-title lead">Distribution</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae inventore minima, 
@@ -141,7 +141,7 @@
                 </div>
                 <div class="col-4">
                         <div class="card service-card">
-                                <img class="card-img-top service-img" src="./src/img/sample3.jpg" alt="sample">
+                                <img class="card-img-top service-img" src="./src/img/fleet-management.jpg" alt="sample">
                                 <div class="card-body bg-dark text-light">
                                     <h5 class="card-title lead">Fleet Management</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ullam exercitationem, 
@@ -233,8 +233,7 @@
                         <p class="text-muted">
                             Our competitive advantage comes from having multi locations, with Locations in heart of the commercial business 
                             district of Hobart (Derwent Park) and Launceston, (South Launceston) We offer over 2000 sq meters of undercover secure facilities.
-                            Complete Storage and Logistics is located in a secure environment which is monitored 24/7 for client satisfaction. 
-                            For more information please give us a call or contact via email</p> 
+                            </p> 
                     </div>
                 </div>
         </div>
@@ -267,6 +266,13 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="" class="">
+        <div id="google-map" class="container">
+            <h2>Our Location</h2>
+        </div>
+        <div id="map"></div>
     </section>
 
 
@@ -326,12 +332,39 @@
 
     <br>
     <div id="end" class="container mt-2">
-        <footer class="text-muted" style="font-size: 10px">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium atque esse eveniet unde tempore maxime.</footer>
+        <footer class="text-muted" style="font-size: 10px">Visit our sister business at <a href="">Empire Couriers</a> and <a href="https://www.budgetbox.com.au/">Budget Box Mobile Storage</a></footer>
         <hr>
-        <footer class="text-muted mb-3" style="font-size: 10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ea!</footer>
+        <footer class="text-muted mb-3" style="font-size: 10px">Copyright &copy; 2018 CSL TAS All rights reserved.</footer>
     </div>
     
+    <!--Google maps-->
+    <script>
+        function initMap(){
+            var options = {
+                zoom: 17,
+                center: {lat:-42.8324695,lng:147.2857454}
+            }
 
+            var map = new google.maps.Map(document.getElementById('map'),options)
+
+            var marker = new google.maps.Marker({
+                position:{lat:-42.832427,lng:147.286887},
+                map:map
+            })
+
+            var infowindow = new google.maps.InfoWindow({
+                content: '<h3>CSL TAS</h3><p>37 Howard Rd, Glenorchy, TAS 7010</p>'
+            })
+
+            marker.addListener('mouseover',function(){
+                infowindow.open(map,marker)
+            })
+
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA5VIEILj9XHxY1mtQbLwpI3_vMoVCEY8&callback=initMap">
+    </script>
 
 
     <!-- Optional JavaScript -->
