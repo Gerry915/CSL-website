@@ -8,6 +8,10 @@ function myFun(){
     var test = document.getElementById("test")
     var subtitle = document.getElementById("sub-title")
     var nav = document.getElementById("nav")
+    
+    var body = document.querySelector(".test")
+    var all = body.querySelectorAll("#nav-text1,#nav-text2,#nav-text3,#nav-text4")
+    
     if (distancePX <= 300){
         mainImg.classList.add("show")
         mainImg.classList.remove("hide")
@@ -17,10 +21,16 @@ function myFun(){
 
         test.classList.add("show")
         test.classList.remove("hide")
+
         nav.style.background = "transparent"
         nav.classList.remove("navbar-light")
         nav.classList.remove("bg-light")
-
+        
+        all.forEach(function(ele){
+            ele.classList.add("text-light")
+            ele.classList.remove("text-muted")
+        })
+       
     }else{
         mainImg.classList.add("hide")
         mainImg.classList.remove("show")
@@ -33,6 +43,11 @@ function myFun(){
 
         nav.classList.add("navbar-light")
         nav.classList.add("bg-light")
+
+        all.forEach(function(ele){
+            ele.classList.add("text-muted")
+            ele.classList.remove("text-light")
+        })
     }
 
 

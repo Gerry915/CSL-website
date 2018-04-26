@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:700" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/mystyle.css">
     <!--Font Awesome-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
@@ -21,7 +23,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body onscroll="myFun()">
+<body id="main" onscroll="myFun()">
     <nav id="nav" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <a href="#" class="navbar-brand">
             <img src="./src/img/CSLTAS-LOGO.png" alt="csltas" style="height:50px;width:auto">
@@ -31,18 +33,18 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="cslnav">
-            <ul class="navbar-nav ml-auto pr-3">
+            <ul class="test navbar-nav ml-auto pr-3">
                 <li class="nav-item active mr-3">
-                    <a class="nav-link text-muted" href="#">Home</a>
+                    <a id="nav-text1" class="nav-link text-muted" href="#">Home</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link text-muted" href="#services">Services</a>
+                    <a id="nav-text2" class="nav-link text-muted" href="#services">Services</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link text-muted" href="#fleet-management">Fleet Management</a>
+                    <a id="nav-text3" class="nav-link text-muted" href="#fleet-management">Location</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link text-muted" href="#contact-us">Contact Us</a>
+                    <a id="nav-text4" class="nav-link text-muted" href="#contact-us">Contact Us</a>
                 </li>
                 <li class="nav-item">
                         <button id="qoute" type="button" class="btn-success nav-link text-light">Get a qoute</button>
@@ -121,10 +123,10 @@
                                 <img class="card-img-top service-img" src="./src/img/warehousing.jpg" alt="sample">
                                 <div class="card-body bg-dark text-light">
                                     <h5 class="card-title lead">Warehouse</h5>
-                                    <p class="card-text">Lorem, ipsum dolor Lorem ipsum dolor sit amet, consectetur 
-                                        adipisicing elit. Nesciunt, quas? sit amet consectetur adipisicing elit. Qui vitae 
-                                        optio repellat beatae, doloremque modi.</p>
-                                    <a href="#" class="btn btn-light mb-3">Read more</a>
+                                    <p class="card-text">With a fully customized and adapting WMS, CSL provides its 
+                                        customers with an unrivalled accountability and reporting system to make sure your goods are kept in good
+                                         hands. </p>
+                                    <a href="#services" class="btn btn-info my-3">Read more</a>
                                 </div>
                             </div>
                 </div>
@@ -135,7 +137,7 @@
                                     <h5 class="card-title lead">Distribution</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae inventore minima, 
                                         rem assumenda eligendi obcaecati enim in ab aut suscipit dignissimos autem perspiciatis qui eos.</p>
-                                    <a href="#" class="btn btn-light mb-3">Read more</a>
+                                    <a href="#fleet-management" class="btn btn-info my-3">Read more</a>
                                 </div>
                             </div>
                 </div>
@@ -147,7 +149,7 @@
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ullam exercitationem, 
                                         laboriosam dignissimos assumenda ipsa minus et optio. Sed voluptates
                                          harum rem nobis ad obcaecati.</p>
-                                    <a href="#" class="btn btn-light mb-3">Read more</a>
+                                    <a href="#fleet-management" class="btn btn-info my-3">Read more</a>
                                 </div>
                             </div>
                 </div>
@@ -280,7 +282,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
-                        <img class="w-100" src="./src/img/IMG_2125.JPG" alt="about" style="border-radius: 5px">
+                        <img class="w-100" src="./src/img/CLS-SIGN.jpg" alt="about" style="border-radius: 5px">
                     </div>
                     <div class="col-lg-7">
 
