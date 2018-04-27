@@ -26,7 +26,7 @@
 <body id="main" onscroll="myFun()">
     <nav id="nav" class="navbar navbar-expand-md navbar-light fixed-top">
         <a href="#" class="navbar-brand">
-            <img src="./src/img/CSLTAS-LOGO.png" alt="csltas" style="height:50px;width:auto">
+            <img id="logo"  src="./src/img/CSLTAS-LOGO-WITH-BG.png" alt="csltas">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#cslnav" aria-controls="cslnav" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -110,7 +110,7 @@
     <section id="services" class="w-100">
         <div class="container mx-auto">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 s-card">
                         <div class="card service-card m-auto">
                                 <img class="card-img-top service-img" src="./src/img/warehousing.jpg" alt="sample">
                                 <div class="card-body bg-dark text-light">
@@ -118,30 +118,31 @@
                                     <p class="card-text">With a fully customized and adapting WMS, CSL provides its 
                                         customers with an unrivalled accountability and reporting system to make sure your goods are kept in good
                                          hands. </p>
-                                    <a href="#services" class="btn btn-info my-3">Read more</a>
+                                    <a href="#services" class="btn btn-info my-3 services-btn">Read more</a>
                                 </div>
                             </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 s-card">
                         <div class="card service-card m-auto">
                                 <img class="card-img-top service-img" src="./src/img/distribution.jpg" alt="sample">
                                 <div class="card-body bg-dark text-light">
                                     <h5 class="card-title lead">Distribution</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae inventore minima, 
-                                        rem assumenda eligendi obcaecati enim in ab aut suscipit dignissimos autem perspiciatis qui eos.</p>
-                                    <a href="#distribution-fleet" class="btn btn-info my-3">Read more</a>
+                                    <p class="card-text">From collection to delivery or management of your entire inventory CSL and <a href="https://www.empirecouriers.com.au/page/homepage">Empire Couriers</a> seamlessly
+                                        provide fully integrated systems customised to your business requirements.
+                                    </p>
+                                    <a href="#distribution-fleet" class="btn btn-info my-3 services-btn">Read more</a>
                                 </div>
                             </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 s-card">
                         <div class="card service-card m-auto">
                                 <img class="card-img-top service-img" src="./src/img/fleet-management.jpg" alt="sample">
                                 <div class="card-body bg-dark text-light">
                                     <h5 class="card-title lead">Fleet Management</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ullam exercitationem, 
-                                        laboriosam dignissimos assumenda ipsa minus et optio. Sed voluptates
-                                         harum rem nobis ad obcaecati.</p>
-                                    <a href="#distribution-fleet" class="btn btn-info my-3">Read more</a>
+                                    <p class="card-text">Complete Storage and Logistics provides comprehensive fleet management solution, improve efficiency and productivity of your 
+                                        business. Reduce your overall transportation and staff costs.
+                                    </p>
+                                    <a href="#distribution-fleet" class="btn btn-info my-3 services-btn">Read more</a>
                                 </div>
                             </div>
                 </div>
@@ -251,6 +252,8 @@
             <div id="distribution-list" class="hide-section" style="display: block">
                 <ul class="mt-5 text-left services-list">
                     <li><span class="mr-5"><i class="far fa-check-square"></i></span>Partnerships with carriers State-wide, Nationwide and Worldwide</li>
+                    <li><span class="mr-5"><i class="far fa-check-square"></i></span>Same Day and Next Day delivery</li>
+                    <li><span class="mr-5"><i class="far fa-check-square"></i></span>Urgent Deliveries locally and State-wide</li>
                  </ul>
             </div>
             <div id="fleet-list" class="hide-section">

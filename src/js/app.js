@@ -1,13 +1,14 @@
 var mainImg = document.getElementById("main-img")
 var blurImg = document.getElementById("blur-img")
     //getElementsByClassName return an array using [] when call the var
-
+console.log(123)
 function myFun(){
     
     var distancePX = $(document).scrollTop()
     var test = document.getElementById("test")
     var subtitle = document.getElementById("sub-title")
     var nav = document.getElementById("nav")
+    var logo = document.getElementById("logo")
     
     var body = document.querySelector(".test")
     var all = body.querySelectorAll("#nav-text1,#nav-text2,#nav-text3,#nav-text4")
@@ -29,6 +30,8 @@ function myFun(){
         all.forEach(function(ele){
             ele.classList.add("text-light")
             ele.classList.remove("text-muted")
+
+        logo.style.height = "120px"
         })
        
     }else{
@@ -48,6 +51,8 @@ function myFun(){
             ele.classList.add("text-muted")
             ele.classList.remove("text-light")
         })
+
+        logo.style.height = "60px"
     }
 
 
@@ -88,6 +93,7 @@ function showSection(buttion_id){
     var fleet = document.getElementById("fleet-list")
     var btn =document.getElementById("distribution")
     var btnTwo = document.getElementById("fleet")
+    
 
     if(buttion_id ==="distribution"){
         console.log(distribution)
@@ -107,8 +113,6 @@ function showSection(buttion_id){
         btn.classList.remove("text-light")
         fleet.style.display = "block"
         distribution.style.display = "none"
-        
-
     }
 }
 

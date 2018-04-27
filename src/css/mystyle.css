@@ -72,11 +72,18 @@
   opacity: 1;
 }
 
+#logo {
+  height: 120px;
+  width: auto;
+  transition: height .5s ease-in-out;
+}
+
 .service-card {
-  height: 500px;
+  height: 520px;
   width: 300px;
   border: none;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 .service-img {
