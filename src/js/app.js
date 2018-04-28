@@ -30,9 +30,8 @@ function myFun(){
         all.forEach(function(ele){
             ele.classList.add("text-light")
             ele.classList.remove("text-muted")
-
-        logo.style.height = "120px"
         })
+        logo.style.height = "120px"
        
     }else{
         mainImg.classList.add("hide")

@@ -1,3 +1,36 @@
+<?php
+    $msg = "";
+    $msgClass = "";
+
+    if(filter_has_var(INPUT_POST,'submit')){
+        $name = htmlspecialchars($_POST['name']);
+        $email = htmlspecialchars($_POST['email']);
+        $message = htmlspecialchars($_POST['message']);
+        
+
+        if(!empty($name) && !empty($email)){
+            $mailTo = "request@csltas.com.au";
+            $headers = "From: ".$email;
+            $txt = "You have received an email from:  " .$name."\n\n".$message;
+            $subject = "Quote from CSLTAS website";
+    
+            if(mail($mailTo, $subject, $txt, $headers)){
+                $msg = "Your message has been sent";
+                $msgClass = "success";
+            }else{
+                $msg = "Something went wrong, please try again later";
+                $msgClass = "danger";
+            }
+        }else{
+            $msg = "Please enter all field";
+            $msgClass = "danger";
+        }
+
+        
+
+    }
+
+?>
 <!doctype html>
 <html lang="en">
 
@@ -63,26 +96,35 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
+
             <div class="modal-body">
-                <form action="">
+                
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
                     <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="name" class="form-control" id="name" placeholder="Name...">
+                        <label for="name">Name: <span class="text-muted">(*Require)</span></label>
+                        <input type="name" name="name" class="form-control" id="name" placeholder="Name..." required
+                        value="<?php echo isset($_POST['name']) ? $name : '';?>">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email address:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email...">
+                        <label for="email">Email address: <span class="text-muted">(*Require)</span></label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Email..." required
+                        value="<?php echo isset($_POST['email']) ? $email : '';?>">
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
-                        <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" class="form-control"
+                        value="<?php echo isset($_POST['message']) ? $message : '';?>"></textarea>
                     </div>
+                    <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
+              <button type="submit" name="submit" class="btn btn-success" value="submit">Submit</button>
+            </div>
+            <div class="alert-<?php echo $msgClass;?> row w-100 m-auto" >
+                    <h4 class="text-center lead"><?php echo $msg;?></h4>
+            </div>
                 </form>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
-              <button type="submit" name="submit" class="btn btn-success">Submit</button>
-            </div>
+            
           </div>
         </div>
       </div>
